@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1547628641-ec2098bb5812?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+h1{font-size: 40px;
+margin-top: -100px;
+margin-bottom: 100px;
+}
+.social-links{
+    display: flex;
+}
+.social-links a{
+    width: 80px;
+    height: 80px;
+    text-align: center; 
+    text-decoration: none; 
+    color:#000;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    margin: 30px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transform: 0.5s;
+}
+.social-links a .fa-brands {
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+.social-links a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-45deg, #ed1c94,#ffec17);
+    position: absolute;
+    transition: 0.5s;
+}
+.social-links a:hover::after{
+    top: 0;
+}
+.social-links a:hover .fa-brands{
+    color: #fff;
+}
+.social-links a:hover{
+    transform: translateY(-10px);
+}
